@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://backend-service-zuhh.onrender.com'; // Remplacez par l'URL de votre API déployée
+const API_URL = 'http://localhost:3000'; // Remplacez par l'URL de votre API déployée
 
 export const getFilms = async () => {
   try {
@@ -39,4 +39,5 @@ export const deleteFilm = async (id) => {
     console.error('Erreur lors de la suppression du film', error);
   }
 };
+
 
